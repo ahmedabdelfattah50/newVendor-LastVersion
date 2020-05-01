@@ -1,0 +1,824 @@
+
+/* ################# Start Global ################# */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ################# End Global ################# */
+
+/* ################# Start Admin Form Page ################# */
+/* =========== Start Admin Form =========== */
+
+.admin_form {
+    background: rgb(3, 11, 73);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(65, 16, 16);
+    padding: 40px 0;
+    margin-top: 30%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin_form h2 {
+    text-align: center;
+    color: rgb(248, 170, 0);
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.admin_form .form_filed label {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}
+
+.admin_form .form_filed label i {
+    margin-right: 5px;
+    color: rgb(248, 170, 0);
+}
+
+.admin_form .form_filed input {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(248, 170, 0);
+}
+
+.admin_form .form_filed input:focus ,
+.admin_form .submit_admin:focus {
+    outline: none;
+}
+
+.admin_form .submit_admin {
+    width: 50%;
+    margin-top: 10px;
+    padding: 5px 0;
+    font-size: 20px;
+    background: rgb(248, 170, 0);
+    color: rgb(0, 23, 71);
+    font-weight: 700;
+    box-shadow: 0px 0px 10px rgb(191, 213, 233);
+    border: none;
+    border-radius: 5px;
+}
+
+.admin_form .submit_admin:hover {
+    background: rgb(255, 201, 84);
+}
+/* =========== End Admin Form =========== */
+/* ################# End Admin Form Page ################# */
+
+
+/* ################# Start Admin_Dashboard Page ################# */
+/* =========== Start Navbar =========== */
+
+.navbar {
+    background: rgb(3, 12, 77);
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+    color: rgb(248, 170, 0);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 750;
+    box-shadow: 0 0 10px rgb(248, 170, 0);
+    margin-left: 15px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    position: relative;
+}
+
+.navbar .dropdown-menu.show {
+    padding: 20px 0;
+    border-radius: 0;
+    text-align: center;
+    background: rgb(3, 12, 77);
+    border: none;
+}
+
+.navbar .dropdown-menu.show .dropdown-item {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar .dropdown-menu.show .dropdown-item:hover {
+    background: rgb(248, 100, 1);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    background: rgb(248, 170, 0);
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.navbar .edit_out .nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 22px;
+    border: 1.5px solid #fff;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.navbar-collapse {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar .navbar-collapse .nav-item .nav-link {
+    font-weight: 650;
+}
+
+.navbar .dropdown {
+    list-style: none;
+    text-decoration: none;
+}
+
+.notification_bell {
+    margin-right: 15px !important;
+}
+
+.notification_bell i {
+    font-size: 30px;
+}
+
+.notification_bell:hover {
+    color: #fff !important;
+    background: none !important;
+    box-shadow: none !important;
+    /* color: #fa8231 !important; */
+}
+
+.notification_bell_span {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 21px;
+    left: 25px;
+    background: #fa8231;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 36.5%;
+    margin-top: -20px;
+}
+
+/* =========== End Navbar =========== */
+/* =========== Start All stats =========== */
+
+.admin_header ,
+.depart_header {
+    text-align: center;
+    color: rgb(248, 170, 0);
+    width: 100%;
+    font-size: 30px;
+    padding: 20px 10px;
+    box-shadow: 0 0 30px rgb(3, 12, 77);
+    border-radius: 10px;
+    border: 2px solid rgb(3, 12, 77);
+    margin: 70px 0;
+}
+
+.admin_header i ,
+.depart_header i {
+    color: rgb(3, 12, 77);
+}
+
+.all_stats ,
+.depart_sec {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.all_stats .admin_stats ,
+.depart_sec .part {
+    margin: 10px 0;
+    padding: 30px 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.all_stats .admin_stats:hover ,
+.depart_sec .part:hover {
+    box-shadow: 0 0 20px rgb(3, 12, 77);
+}
+
+.all_stats .admin_stats h2 ,
+.depart_sec .part h3 {
+    font-size: 35px;
+    color: rgb(11, 21, 80);
+}
+
+.all_stats .admin_stats a ,
+.depart_sec .part a {
+    font-size: 40px;
+    font-weight: 650;
+    color: #fff;
+}
+
+.depart_header a {
+    font-size: 40px;
+    font-weight: 650;
+    margin-left: 50px;
+    color: rgb(11, 21, 80);
+}
+
+/* ------ this is the total counters ------ */
+
+.all_stats .admin_stats:nth-child(1) {
+    background: #fa8231;
+}
+
+.all_stats .admin_stats:nth-child(2) {
+    background:#2d98da;
+}
+
+.all_stats .admin_stats:nth-child(3) {
+    background:#ff793f;
+}
+
+.all_stats .admin_stats:nth-child(4) {
+    background: #e74c3c;
+}
+
+.all_stats .admin_stats:nth-child(5) {
+    background: #f1c40f;
+}
+
+.all_stats .admin_stats:nth-child(6) {
+    background:#20bf6b;
+}
+
+/* ============ */
+
+.depart_header h2 {
+    display: inline-block;
+    right: 0;
+    margin-left: 50px;
+}
+
+/* ------ this is the total departments ------ */
+
+.depart_sec .part:nth-child(1) {
+    background: #fa8231;
+}
+
+.depart_sec .part:nth-child(2) {
+    background: #0fb9b1;
+}
+
+.depart_sec .part:nth-child(3) {
+    background: #f7b731;
+}
+
+.depart_sec .part:nth-child(4) {
+    background: #2d98da;
+}
+
+.depart_sec .part:nth-child(5) {
+    background: #e58e26;
+}
+
+/* =========== End All stats =========== */
+/* ################# End Admin_Dashboard Page ################# */
+
+/* ################# Start Manage_Amins Page ################# */
+
+/* ========= Start Admins Manage_table ========= */
+
+.total_tabel {
+    overflow-x: scroll;
+}
+
+.header_Manage {
+    text-align: center;
+    padding:40px 0;
+    width: 100%;
+}
+
+.header_Manage i {
+    color: rgb(233, 106, 2);
+    font-size: 40px;
+}
+
+.manage_table {
+    direction: ltr;
+    border: 2px solid rgb(3, 12, 77);
+}
+
+.manage_table thead {
+    background: rgb(3, 12, 77);
+    color: #fff;
+}
+
+.manage_table tr th {
+    border-bottom: 2px solid rgb(3, 12, 77);
+    border-right: 2px solid rgb(3, 12, 77);
+}
+
+.manage_table thead th {
+    border-right: 2px solid #fff;
+}
+
+.manage_table thead th:last-child{
+    border-right: 2px solid rgb(3, 12, 77);
+}
+
+.manage_table tr td {
+    border-right: 2px solid rgb(3, 12, 77);
+    border-bottom: 2px solid rgb(3, 12, 77);
+    color: rgb(3, 12, 77);
+    font-size: 17px;
+}
+
+.manage_table tr td .btns_control {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.manage_table tr td .btns_control a {
+    margin-right: 5px;
+}
+
+/* ========= End Admins Manage_table ========= */
+
+/* ========= Start Admins Add_table ========= */
+
+.Add-Edit_inputs {
+    text-align: center;
+}
+
+.header_Add-Edit {
+    text-align: center;
+    padding:40px 0;
+}
+
+.Add-Edit_inputs div label {
+    display: block;
+    font-size: 25px;
+    color: rgb(3, 12, 77);
+    font-weight: 600;
+}
+
+.Add-Edit_inputs div input ,
+.Add-Edit_inputs div select ,
+.Add-Edit_inputs div textarea {
+    padding: 5px 10px;
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(122, 31, 3);
+    border: 1.5px solid rgb(32, 42, 51);
+    background-color: #f8f7f7;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.Add-Edit_inputs div input .checkbox {
+    padding: 0;
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border: 1.5px solid rgb(32, 42, 51);
+    background-color: red;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.Add-Edit_inputs div input:active ,
+.Add-Edit_inputs div input:focus ,
+.Add-Edit_inputs div textarea:active ,
+.Add-Edit_inputs div textarea:focus {
+    box-shadow: 0 0 10px rgb(71, 107, 138);
+    outline: none;
+    width: 100%;
+}
+
+.Add-Edit_inputs div .checkbox:active ,
+.Add-Edit_inputs div .checkbox:focus  {
+    box-shadow: none;
+}
+
+.Add_Edit_Submit {
+    padding: 5px 20px;
+    font-size: 20px;
+    border: none;
+    margin: 10px 0 20px 0;
+}
+
+/* ===== checkbox div */
+
+.Add-Edit_inputs .total_admin_inputs .checkbox_inpus {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    padding: 25px 0;
+    font-size: 25px;
+    width: 90%;
+    margin: 0 0 25px 5%;
+    border: 1.5px solid rgb(32, 42, 51);
+    background-color: #f8f7f7;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.Add-Edit_inputs .total_admin_inputs .checkbox_inpus input {
+    box-shadow: none;
+    position: relative;
+    margin: 10px 0 0 25px;
+    width: 50%;
+}
+
+.Add-Edit_inputs .total_admin_inputs .checkbox_inpus span {
+    margin: 0 0 10px -40px;
+    font-size: 20px;
+    font-weight: 750;
+    color: rgb(11, 21, 80);
+} 
+
+/* ========= Start Admins Add_table ========= */
+
+/* ################# Start Market_products Page ################# */
+
+.total_products {
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+}
+
+.total_products .market_product {
+    border: 2px solid #032a41;
+    box-shadow: 0 0 20px #032a41;
+    margin: 20px 0;
+    width: 95%;
+}
+
+.total_products .market_product .main_img {
+    height: 80%;
+    width: 100%;
+    padding: 2px;
+}
+
+.total_products .market_product .main_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.total_products .market_product .pro_plus_imgs {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.total_products .market_product .pro_plus_imgs div {
+    height: 95%;
+    margin: 2px;
+}
+
+.total_products .market_product .pro_plus_imgs img {
+    height: 100%;
+    width: 100%;
+}
+
+.total_products .product_info {
+    border-top: 2px solid rgb(11, 21, 80);
+    padding: 10px 0;
+    margin: 0;
+    background: rgb(248, 247, 247);
+}
+
+.total_products .product_info p {
+    padding: 0 15px;
+    color: rgb(36, 52, 148);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total_products .product_info p span {
+    color: #000;
+}
+
+.total_products .product_info .pro_size .product_size {
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    margin: 10px 0;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.total_products .product_info .pro_size .product_size span {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(11, 21, 80);
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+    font-weight: 600;
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+
+.market_product .pro_obtions {
+    padding: 10px;
+    border-top: 2px solid rgb(11, 21, 80);
+    margin: 2px 0;
+    background: rgb(248, 247, 247);
+}
+
+.market_product .pro_obtions a {
+    margin: 0 5px;
+    box-shadow: 0 0 10px #fff;
+}
+
+
+/* ################# End Market_products Page ################# */
+
+
+/* ################# End Manage_Amins Page ################# */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    /* ################# Start Market_products Page ################# */
+    .total_products .market_product {
+        width: 90%;
+        margin-right: 5%;
+    }
+
+    .total_products .product_info .pro_size .product_size {
+        margin: 10px;
+    }
+
+    .Market_Data .data_market h3 {
+        font-size: 23px;
+    }
+    /* ################# End Market_products Page ################# */
+
+    /* ===== checkbox div */
+
+    .Add-Edit_inputs .total_admin_inputs .checkbox_inpus input {
+        margin: 10px 0 0 70px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+/* ################# Start Admin Form Page ################# */
+/* =========== Start Admin Form =========== */
+
+.admin_form {
+    padding: 60px 0;
+    width: 80%;
+    margin: 22% 0 0 10%;
+    margin-top: 22%;
+}
+
+.admin_form h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.admin_form .form_filed label {
+    font-size: 22px;
+}
+
+.admin_form .form_filed input {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* =========== End Admin Form =========== */
+/* =========== Start All stats =========== */
+.all_stats ,
+.depart_sec {
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.Add-Edit_inputs div {
+    margin-bottom: 20px;
+}
+
+.all_stats .admin_stats ,
+.depart_sec .part {
+    margin: 10px;
+}
+/* =========== End All stats =========== */
+
+/* ========= Start Admins Add_table ========= */
+
+.Add_Edit_Submit {
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+.Add-Edit_inputs div input ,
+.Add-Edit_inputs div select {
+    width: 95%;
+}
+
+.Add-Edit_inputs .total_admin_inputs {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+/* ===== checkbox div */
+
+.Add-Edit_inputs .total_admin_inputs .checkbox_inpus input {
+    margin: 10px 0 0 30px;
+}
+
+/* ========= Start Admins Add_table ========= */
+
+/* ################# End Admin Form Page ################# */
+
+/* ################# Start Market_products Page ################# */
+.total_products {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+.total_products .product_info .pro_size .product_size {
+    margin-top: 0px;
+    margin-right: 50px;
+}
+
+/* ################# End Market_products Page ################# */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+/* ################# Start Admin Form Page ################# */
+/* =========== Start Admin Form =========== */
+.admin_form {
+    margin-top: 10%;
+}
+
+.admin_form h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.admin_form .form_filed label {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.admin_form .form_filed input {
+    margin-bottom: 40px;
+    font-size: 25px;
+    width: 130%;
+}
+/* =========== End Admin Form =========== */
+/* ========= Start Admins Add_table ========= */
+
+.Add-Edit_inputs div input ,
+.Add-Edit_inputs div select {
+    width: 90%;
+}
+
+/* ===== checkbox div */
+
+.Add-Edit_inputs .total_admin_inputs .checkbox_inpus input {
+    margin: 10px 0 0 70px;
+}
+/* ========= Start Admins Add_table ========= */
+/* ################# End Admin Form Page ################# */
+
+
+/* =========== Start Navbar =========== */
+.navbar .edit_out .nav-link {
+    font-size: 18px;
+}
+
+.notification_bell_span {
+    top: 40px;
+    left: 10px;
+}
+
+
+.navbar-expand-lg .navbar-collapse {
+    padding: 5px 0;
+}
+
+/* =========== End Navbar =========== */
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+/* ################# Start Admin Form Page ################# */
+/* =========== Start Admin Form =========== */
+
+.admin_form {
+    margin: 6% 0 0 10%;
+}
+
+.admin_form h2 {
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+
+.admin_form .form_filed label {
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+.admin_form .form_filed input {
+    margin-bottom: 45px;
+    font-size: 25px;
+}
+
+.admin_form .submit_admin {
+    font-size: 27px;
+    padding: 10px 0;
+}
+
+/* =========== End Admin Form =========== */
+/* =========== Start All stats =========== */
+.all_stats ,
+.depart_sec {
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.all_stats .admin_stats ,
+.depart_sec .part {
+    margin: 10px;
+}
+
+.admin_header ,
+.depart_header {
+    padding: 25px 0;
+}
+
+.admin_header ,
+.depart_header h2 {
+    font-size: 40px;
+}
+
+/* =========== End All stats =========== */
+/* ################# End Admin Form Page ################# */
+
+/* ################# Start Manage_Amins Page ################# */
+
+.total_tabel {
+    overflow-x: hidden;
+}
+
+/* ################# End Manage_Amins Page ################# */
+
+/* ################# Start Market_products Page ################# */
+.total_products {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.total_products .product_info .pro_size .product_size {
+    margin-top: 0px;
+    margin-right: 50px;
+}
+/* ################# End Market_products Page ################# */
+
+}

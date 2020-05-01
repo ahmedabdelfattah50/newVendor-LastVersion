@@ -1,0 +1,339 @@
+/*      // Extra small devices (portrait phones, less than 576px)
+        // No media query for `xs` since this is the default in Bootstrap
+*/
+
+/* ========== Start Navbar ========== */
+
+.navbar  {
+    background: rgb(240, 66, 66);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar .dropdown .nav-link {
+    color: #fff;
+}
+
+.navbar .dropdown .nav-link:hover {
+    color: rgb(12, 0, 4);
+}
+
+.navbar .btn  {
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+.navbar .btn:hover {
+    color: #ff5030;
+    background: #ddd;
+}
+
+.navbar {
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.navbar .left_nav {
+    display: flex;
+}
+
+.navbar .dropdown {
+    right: 0;
+    margin-left: 100%;
+}
+
+/* ========== End Navbar ========== */
+
+/* ========== Start login form ========== */
+
+.login {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px #ddd;
+    width: 50%;
+    padding: 100px 0;
+}
+
+.login h1 {
+    margin-bottom: 40px;
+    color: #ff5030;
+}
+
+.login input {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    padding-left: 10px;
+    width: 50%;
+    font-size: 20px;
+    color : rgb(31, 24, 24);
+    font-weight: 640; 
+}
+
+.login input:focus {
+    box-shadow: 0 0 10px #ddd;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.login input:last-child {
+    color: #fff;
+    border: none;
+    font-weight: 640;
+    padding: 10px 30px;
+    background: #ff5030;
+} 
+/* ========== End login form ========== */
+
+/* ========== Start total_dashboard ========= */
+
+.total_dashboard h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.total_dashboard .total_members {
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);    
+}
+
+.total_dashboard .total_members .members_count {
+    text-align: center;    
+    border-radius: 10px;
+    color: #fff;
+    padding: 50px 0;
+    margin: 0 10px;
+}
+
+.total_dashboard .total_members .members_count p {
+    font-size: 25px;
+}
+
+.total_dashboard .total_members .members_count a {
+    font-size: 50px;
+    color: #fff !important;
+}
+
+.total_dashboard .total_members .members_count:nth-child(1) {
+    background:#bd081c;
+}
+
+.total_dashboard .total_members .members_count:nth-child(2) {
+    background: #34465d;
+}
+
+.total_dashboard .total_members .members_count:nth-child(3) {
+    background: #0077b5;
+}
+
+.total_dashboard .total_members .members_count:nth-child(4) {
+    background: #3b5999;
+}
+
+.total_dashboard .total_members .members_count:nth-child(5) {
+    background: #2B9331;
+}
+
+
+
+
+/* ============= start form of edit memebers ============= */
+
+.edit_form {
+    padding: 20px 100px;
+}
+
+.edit_form h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 50px 0 70px 0;
+}
+
+.edit_form form label {
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.edit_form form input {
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: rgb(216, 12, 12);
+    font-weight: 900;
+}
+
+.edit_form .save_btn {
+    padding: 10px 50px;
+    background: #ff5030;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: normal;
+    width: 20%;
+}
+
+.main_Errors .Error_MESG {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.fa-eye {
+    cursor: pointer;
+    font-size: 40px;
+    margin: 10px 0 0 -70px;
+    position: absolute;
+}
+
+.fa-eye:hover {
+    color: #ff5030;
+} 
+
+/* ============= End form of edit memebers ============= */
+
+.lates_div {
+    margin-top: -30px;
+    padding: 20px;
+    background: #bd081c;
+    color: #fff;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* ==================  start categories */
+
+.cat_manage {
+    color: #fff;
+}
+
+.cat_manage .cat_MAN_div {
+    margin-bottom: 50px; 
+    padding: 20px;
+    background: #00b489;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(170, 107, 107);
+}
+
+.cat_manage .cat_MAN_div button {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.cat_manage .cat_MAN_div .success_btn {
+    background: #eea404;
+    color: #000;
+    display: inline-block;
+}
+
+.cat_manage .cat_MAN_div .no_descripe {
+    background: #bd081c;
+}
+
+.cat_manage .cat_MAN_div .no_ordering {
+    background: #085cbd;
+}
+
+.cat_manage .cat_MAN_div .no_visibility {
+    background: #04925c;
+}
+
+.cat_manage .cat_MAN_div .no_comments {
+    background: #ae08bd;
+}
+
+.cat_manage .cat_MAN_div .no_ads {
+    background: #bd0817;
+}
+
+.cat_manage .cat_MAN_div {
+    overflow: hidden;
+}
+
+.cat_manage .cat_MAN_div:hover .buttons_cat_data {
+    margin-right: 0px;
+}
+
+
+.cat_manage .cat_MAN_div .buttons_cat_data {
+    /* background: red; */
+    float: right;
+    margin-right: -200px;
+    margin: 50px -200px 0 0;
+    transition: 0.3s ease-in-out;
+}
+
+.cat_manage .cat_MAN_div .buttons_cat_data button:nth-child(1) {
+    background: #203e41;    
+}
+
+.cat_manage .cat_MAN_div .buttons_cat_data button:nth-child(1) a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cat_manage .cat_MAN_div .buttons_cat_data button:nth-child(2) {
+    background: #a31e15;
+}
+
+.sort_catDiv {
+    text-align: right;
+    padding: 30px 0;
+}
+
+
+.sort_catDiv a {
+    color: #eea404;
+    background: #bd0817;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.sort_catDiv .active {
+    color: #ffffff;
+    background: #4a4b4a;
+}
+
+
+/* ################################################################### */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* ################################################################### */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* ################################################################### */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+
+}
+
+/* ################################################################### */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
