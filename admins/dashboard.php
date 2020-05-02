@@ -9,7 +9,7 @@
         $stmt = $con->prepare("SELECT * FROM hosters WHERE ID = ?");
         $stmt->execute(array($current_Admin));
         $row = $stmt->fetch();         
-            
+             
 
         // this is if the Admin is main admin
         if($row['admin_trust'] == 1) {            

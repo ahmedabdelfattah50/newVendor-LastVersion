@@ -8,6 +8,7 @@
     $lang_path = 'includes/languages/';         // path of languages file
     $func      = 'includes/functions/';         // path of languages file
     $img_path  = 'layout/images/';
+    $img_product_path = 'uploades/products_images/';
     // ====================== Files include #######################
 
     

@@ -2,7 +2,7 @@
     include 'init.php';                   // ======== include the init file ========   
 ?>
 
-    <div class="container">
+    <div class="container"> 
     <!-- ========= Start Categories Manage_Category ========= -->
     <!-- ($do == Manage_Category) -->
     <h2 class="header_Manage"><i class="fas fa-shopping-cart"></i> All Categories</h2>

@@ -6,7 +6,7 @@
         if(isset($_GET['do'])) {
             $do = $_GET['do'];
         } else {
-            $do = "Manage";
+            $do = "Manage"; 
         }
 ?>
 
@@ -241,55 +241,55 @@
                 $product_size_XS          = $_POST['xs_size_inp'];      // size 1                
                 if ($product_size_XS == "on") {
                     $product_size_XS = 1;
-                    echo $product_size_XS . "<br>";
+                    // echo $product_size_XS . "<br>";
                 } else {
                     $product_size_XS = 0;
-                    echo $product_size_XS . "<br>";
+                    // echo $product_size_XS . "<br>";
                 }
 
                 $product_size_S           = $_POST['s_size_inp'];       // size 2
                 if ($product_size_S == "on") {
                     $product_size_S = 1;
-                    echo $product_size_S . "<br>";
+                    // echo $product_size_S . "<br>";
                 } else {
                     $product_size_S = 0;
-                    echo $product_size_S . "<br>";
+                    // echo $product_size_S . "<br>";
                 }
 
                 $product_size_M           = $_POST['m_size_inp'];       // size 3
                 if ($product_size_M == "on") {
                     $product_size_M = 1;
-                    echo $product_size_M . "<br>";
+                    // echo $product_size_M . "<br>";
                 } else {
                     $product_size_M = 0;
-                    echo $product_size_M . "<br>";
+                    // echo $product_size_M . "<br>";
                 }
 
                 $product_size_L           = $_POST['l_size_inp'];       // size 4
                 if ($product_size_L == "on") {
                     $product_size_L = 1;
-                    echo $product_size_L . "<br>";
+                    // echo $product_size_L . "<br>";
                 } else {
                     $product_size_L = 0;
-                    echo $product_size_L . "<br>";
+                    // echo $product_size_L . "<br>";
                 }
 
                 $product_size_XL          = $_POST['xl_size_inp'];      // size 5
                 if ($product_size_XL == "on") {
                     $product_size_XL = 1;
-                    echo $product_size_XL . "<br>";
+                    // echo $product_size_XL . "<br>";
                 } else {
                     $product_size_XL = 0;
-                    echo $product_size_XL . "<br>";
+                    // echo $product_size_XL . "<br>";
                 }                
 
                 $product_size_XLL         = $_POST['xll_size_inp'];     // size 6
                 if ($product_size_XLL == "on") {
                     $product_size_XLL = 1;
-                    echo $product_size_XLL . "<br>";
+                    // echo $product_size_XLL . "<br>";
                 } else {
                     $product_size_XLL = 0;
-                    echo $product_size_XLL . "<br>";
+                    // echo $product_size_XLL . "<br>";
                 }          
 
                 $product_price            = $_POST['product_price'];
@@ -359,15 +359,15 @@
 
                     if (file_exists($product_imgs)) {
                         move_uploaded_file($pr_mainImg_TempName , $product_imgs . $random_MainNum);
-                        move_uploaded_file($pr_Img1_TempName , $product_imgs . $random_Img1Num);
-                        move_uploaded_file($pr_Img2_TempName , $product_imgs . $random_Img2Num);
-                        move_uploaded_file($pr_Img3_TempName , $product_imgs . $random_Img3Num);
+                        move_uploaded_file($pr_Img1_TempName    , $product_imgs . $random_Img1Num);
+                        move_uploaded_file($pr_Img2_TempName    , $product_imgs . $random_Img2Num);
+                        move_uploaded_file($pr_Img3_TempName    , $product_imgs . $random_Img3Num);
                     } else {
                         mkdir($product_imgs);  
                         move_uploaded_file($pr_mainImg_TempName , $product_imgs . $random_MainNum);
-                        move_uploaded_file($pr_Img1_TempName , $product_imgs . $random_Img1Num);
-                        move_uploaded_file($pr_Img2_TempName , $product_imgs . $random_Img2Num);
-                        move_uploaded_file($pr_Img3_TempName , $product_imgs . $random_Img3Num);
+                        move_uploaded_file($pr_Img1_TempName    , $product_imgs . $random_Img1Num);
+                        move_uploaded_file($pr_Img2_TempName    , $product_imgs . $random_Img2Num);
+                        move_uploaded_file($pr_Img3_TempName    , $product_imgs . $random_Img3Num);
                     }
                 }
 
@@ -434,7 +434,7 @@
         <form class="Add-Edit_inputs">
             <h2 class="header_Add-Edit header_Manage">Edit Product <i class="fas fa-cart-plus"></i></h2>
             <div class="total_admin_inputs">
-            <div>
+                <div>
                     <label for="">Name</label>
                     <input type="text" name="" value="<?php echo $row['name']?>">
                 </div>
@@ -445,35 +445,95 @@
                 <div>
                     <label for="">Sizes</label>
                     <div class="checkbox_inpus">
-                    <?php
-                        // if() {
-                        //     <input name="xs_size_inp" type="checkbox"><span>XS</span>
-                        // }
-                        // <input name="s_size_inp" type="checkbox"><span>S</span>
-                        // <input name="m_size_inp" type="checkbox"><span>M</span>
-                        // <input name="l_size_inp" type="checkbox"><span>L</span>
-                        // <input name="xl_size_inp" type="checkbox"><span>XL</span>
-                        // <input name="xll_size_inp" type="checkbox"><span>XLL</span>
-                    ?>
+                        <?php
+                            // size 1
+                            if( $row['XS_size'] == 1 ) {
+                                echo "<input name='xs_size_inp' type='checkbox' checked ><span>XS</span>";
+                            } else {
+                                echo "<input name='xs_size_inp' type='checkbox'><span>XS</span>";
+                            }
+
+                            // size 2
+                            if( $row['S_size'] == 1 ) {
+                                echo "<input name='s_size_inp' type='checkbox' checked><span>S</span>";
+                            } else {
+                                echo "<input name='s_size_inp' type='checkbox'><span>S</span>";
+                            }
+
+                            // size 3
+                            if( $row['M_size'] == 1 ) {
+                                echo "<input name='m_size_inp' type='checkbox' checked><span>M</span>";
+                            } else {
+                                echo "<input name='m_size_inp' type='checkbox'><span>M</span>";
+                            }
+
+                            // size 4
+                            if( $row['L_size'] == 1 ) {
+                                echo "<input name='l_size_inp' type='checkbox' checked><span>L</span>";
+                            } else {
+                                echo "<input name='l_size_inp' type='checkbox'><span>L</span>";
+                            }
+
+                            // size 5
+                            if( $row['XL_size'] == 1 ) {
+                                echo "<input name='xl_size_inp' type='checkbox' checked><span>XL</span>";
+                            } else {
+                                echo "<input name='xl_size_inp' type='checkbox'><span>XL</span>";
+                            }
+
+                            // size 6
+                            if( $row['XXL_size'] == 1 ) {
+                                echo "<input name='xll_size_inp' type='checkbox' checked><span>XLL</span>";
+                            } else {
+                                echo "<input name='xll_size_inp' type='checkbox'><span>XLL</span>";
+                            }                                                                   
+                        
+                        ?>
                     </div>
                 </div>
                 <div>
                     <label for="">Price in Pound</label>
-                    <input type="tel" name="" required>
+                    <input type="tel" name="" value="<?php echo $row['price']?>">
                 </div>
                 <div>
                     <label for="">Discount</label>
                     <select name="" id="">
-                        <option value=""></option>
-                        <option value="">0%</option>
-                        <option value="">10%</option>
-                        <option value="">20%</option>
-                        <option value="">30%</option>
-                        <option value="">40%</option>
+                        <?php
+                            // this for loops to view the selected option from the database
+                            echo "<option value=''>---</option>";
+                            for($i = 0 ; $i < 1 ; $i++) {                                
+                                for( $j = 0 ; $j < 100 ; $j=$j+10 ) {
+                                    if( $row['discount'] == $j ) {
+                                        echo "<option value='" . $j . "' selected>" . $j ."%</option>";
+                                    } else {
+                                        echo "<option value='" . $j . "'>" . $j . "%</option>";
+                                    }
+                                }
+                            }
+                        ?>
                     </select>
                 </div>
+
+                <?php
+                    // this code to get the ID of the market from the products table
+                    $stmt6 = $con->prepare("SELECT market_ID FROM products WHERE ID = ?");
+                    $stmt6->execute( array($origin_ID) );
+                    $market_ID_FProd = $stmt6->fetch();
+                    $mart_ID = $market_ID_FProd['market_ID'];      // this is the ID of the market
+                    
+                    $stmt7 = $con->prepare("SELECT EN_name FROM markets WHERE ID = ?");
+                    $stmt7->execute(array($mart_ID));
+                    $market_name_FProd = $stmt7->fetch();
+
+                    echo $market_name_FProd['EN_name'];
+
+                ?>      
+
+                // HERE
+
                 <div>
                     <label for="">Main Image</label>
+                    <img src="<?php echo $img_product_path . $market_name_FProd['EN_name'] . "/" . $row['main_img'] ?>" alt="">
                     <input type="file" class="img_upload" name="" value="<?php echo(($row['phone2'] == NULL)?" ":$row['phone2']);  ?>">
                 </div>
                 <div>
@@ -651,19 +711,19 @@
         <!-- ========= Start Products Delete_Product ========= -->
         <?php
         } else if($do == "Delete") {
+            
+            $del_ID = base64_decode($_GET['proID']);
 
-            $del_ID = base64_decode($_GET['adminID']);
+            if(isset($_GET['proID']) && is_numeric($del_ID)) {
 
-            if(isset($_GET['adminID']) && is_numeric($del_ID)) {
-
-                $stmt = $con->prepare("DELETE FROM hosters WHERE ID = :ADMIN_DEL");
-                $stmt->bindParam(":ADMIN_DEL" , $del_ID);
+                $stmt = $con->prepare("DELETE FROM products WHERE ID = :PRODUCT_ID");
+                $stmt->bindParam(":PRODUCT_ID" , $del_ID);
                 $stmt->execute();
-                echo "<br><br><h2 class='alert alert-dark'>one Admin Deleted</h2>";
+                echo "<br><br><h2 class='alert alert-dark'>one Product Deleted</h2>";
                 // header("refresh:5;url:admins.php?do=Manage");
-                echo "<a href='admins.php?do=Manage' class='btn btn-success'>Admins Page</a>";
+                echo "<a href='products.php?do=Manage' class='btn btn-success'>Products Page</a>";
             } else {
-                echo "<h2 class='alert alert-danger'>Sorry You can't Delete any Admin</h2>";
+                echo "<h2 class='alert alert-danger'>Sorry You can't Delete any Product</h2>";
             }
 
         ?>

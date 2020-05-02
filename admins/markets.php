@@ -6,7 +6,7 @@
             $do = $_GET['do'];          
         } else {
             $do = 'Manage';
-        }
+        } 
 ?>
 
     <div class="container">

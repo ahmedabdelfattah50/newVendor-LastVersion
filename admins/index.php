@@ -1,7 +1,7 @@
 <?php
     $noNavbar = '';         // this to remove the navbar from the index admin form
 
-    session_start();
+    session_start(); 
     if(isset($_SESSION['name'])) {
         header('location:dashboard.php');
         exit(); 
