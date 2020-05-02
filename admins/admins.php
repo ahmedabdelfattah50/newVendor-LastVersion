@@ -1,5 +1,6 @@
 <?php
 
+    echo "Ahmed";
     session_start();
     if(isset($_SESSION['name'])) {
         include 'init.php';                   // ======== include the init file ========
